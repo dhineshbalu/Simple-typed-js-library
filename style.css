@@ -1,0 +1,20 @@
+span::after{
+    content: '|';
+    font-size: 35px;
+    color:black;
+    font-weight: bold;
+    animation-name: cursor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+span {
+    font-size: 25px;
+}
+@keyframes cursor {
+    0%,50%,100%{
+        opacity: 1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}
